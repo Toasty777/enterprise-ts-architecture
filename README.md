@@ -117,17 +117,18 @@ docker-compose -f docker-compose.dev.yml up --build
 npm run test:coverage
 ```
 ## API Documentation
-OpenAPI Spec	/docs/api/openapi.yaml
-GraphQL Schema	/docs/api/schema.graphql
-WebSocket Protocol	/docs/api/websocket.md
-Production Deployment
-Scaling Configuration
+| OpenAPI Spec        | `/docs/api/openapi.yaml`    |
+| GraphQL Schema      | `/docs/api/schema.graphql`  |
+| WebSocket Protocol  | `/docs/api/websocket.md`    |
+
+## Production Deployment
+### Scaling Configuration
 Load balancing across multiple nodes
 Database sharding configuration
 Redis cluster setup
 PM2 cluster mode enabled
-Environmental Configuration
-TypeScript
+### Environmental Configuration
+```typescript
 interface EnvironmentConfig {
     NODE_ENV: 'development' | 'production' | 'test';
     MONGODB_URI: string;
@@ -135,19 +136,14 @@ interface EnvironmentConfig {
     JWT_ALGORITHM: 'RS256' | 'ES256';
     CACHE_TTL: number;
 }
-Project Information
+```
+## Project Information
 Last Updated: 2025-02-04 08:55:22 UTC
 Maintainer: @Toasty777
 License: MIT
 Documentation: Full technical documentation and architecture diagrams available in /docs/technical/
-Contributing
-Fork the repository
-Create your feature branch (git checkout -b feature/AmazingFeature)
-Commit your changes (git commit -m 'Add some AmazingFeature')
-Push to the branch (git push origin feature/AmazingFeature)
-Open a Pull Request
-License
+## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 ⭐ Star this repository if you find it helpful!
-Need help? Open an issue
+Need help? [Open an issue](https://github.com/Toasty777/enterprise-ts-architecture/issues/new)
