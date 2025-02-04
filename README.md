@@ -117,9 +117,9 @@ docker-compose -f docker-compose.dev.yml up --build
 npm run test:coverage
 ```
 ## API Documentation
-| OpenAPI Spec        | `/docs/api/openapi.yaml`    |
-| GraphQL Schema      | `/docs/api/schema.graphql`  |
-| WebSocket Protocol  | `/docs/api/websocket.md`    |
+| OpenAPI Spec       | `/docs/technical/api/openapi.yaml`   |
+| GraphQL Schema     | `/docs/technical/api/schema.graphql` |
+| WebSocket Protocol | `/docs/technical/api/websocket.md`   |
 
 ## Production Deployment
 ### Scaling Configuration
