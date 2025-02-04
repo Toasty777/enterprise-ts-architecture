@@ -26,29 +26,30 @@ export class APIController implements IController {
     @Inject() private readonly authService: AuthService;
     @Inject() private readonly cacheManager: RedisCacheManager;
 }
-Performance Metrics
+```
+#### Performance Metrics
 Response Time: < 100ms (95th percentile)
 Cache Hit Ratio: > 85%
 Concurrent WebSocket Connections: 10k+
 Memory Footprint: < 512MB per instance
-Technical Specifications
-Data Layer
+### Technical Specifications
+#### Data Layer
 MongoDB with Mongoose ODM
 Redis for distributed caching
 WebSocket for real-time data streams
 GraphQL with Apollo Server
-Authentication & Security
+#### Authentication & Security
 JWT-based stateless authentication
 bcrypt (cost factor 12) password hashing
 Rate limiting: 100 requests/min per IP
 XSS protection & CSRF tokens
-API Specifications
+#### API Specifications
 REST API (OpenAPI 3.0)
 GraphQL Schema with Code-First approach
 WebSocket Protocol (RFC 6455)
 Redis Pub/Sub for event distribution
-Implementation Details
-TypeScript
+### Implementation Details
+```typescript
 interface SystemArchitecture {
     dataStructures: {
         binaryTrees: Implementation<BinaryTree>;
@@ -66,13 +67,14 @@ interface SystemArchitecture {
         cache: RedisConnection;
     };
 }
-Performance Optimization
+```
+### Performance Optimization
 Implemented B-tree indexing for MongoDB
 Redis caching with LRU eviction
 Connection pooling optimization
 Asynchronous non-blocking I/O
-Deployment Architecture
-YAML
+### Deployment Architecture
+```YAML
 services:
   app:
     build: 
@@ -84,21 +86,24 @@ services:
         limits:
           cpus: '1'
           memory: 512M
-Technical Requirements
-Node.js	>= 18.0.0
-TypeScript	>= 5.0.0
-MongoDB	>= 6.0
-Redis	>= 7.0
-Docker	>= 24.0
-NPM	>= 9.0.0
-Metrics & Monitoring
-Implemented Systems
+```
+## Technical Requirements
+| Technologie  | Version   |
+|-------------|-----------|
+| Node.js     | >= 18.0.0 |
+| TypeScript  | >= 5.0.0  |
+| MongoDB     | >= 6.0    |
+| Redis       | >= 7.0    |
+| Docker      | >= 24.0   |
+| NPM         | >= 9.0.0  |
+## Metrics & Monitoring
+### Implemented Systems
 Prometheus metrics exposition
 Grafana dashboards included
 Winston logging with ELK stack
 Performance monitoring with custom metrics
-Development Setup
-bash
+## Development Setup
+```bash
 # Clone repository
 git clone https://github.com/Toasty777/enterprise-ts-architecture.git
 
@@ -110,7 +115,8 @@ docker-compose -f docker-compose.dev.yml up --build
 
 # Run test suite with coverage
 npm run test:coverage
-API Documentation
+```
+## API Documentation
 OpenAPI Spec	/docs/api/openapi.yaml
 GraphQL Schema	/docs/api/schema.graphql
 WebSocket Protocol	/docs/api/websocket.md
