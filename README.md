@@ -139,11 +139,7 @@ interface EnvironmentConfig {
     CACHE_TTL: number;
 }
 ```
-## Project Information
-Last Updated: 2025-02-04 08:55:22 UTC
-Maintainer: @Toasty777
-License: MIT
-Documentation: Full technical documentation and architecture diagrams available in /docs/technical/
+
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
